@@ -16,6 +16,7 @@ import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { WinstonModule, WinstonModuleOptions } from 'nest-winston';
 import { DataSource } from 'typeorm';
 import { addTransactionalDataSource } from 'typeorm-transactional';
+import { validateConfig } from './config/config-validation';
 
 const modules = [
   AuthModule,
@@ -36,6 +37,7 @@ const modules = [
       envFilePath: '.env',
       load: configurations,
       cache: true,
+      validate: validateConfig,
     }),
 
     WinstonModule.forRootAsync({

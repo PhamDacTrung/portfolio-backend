@@ -39,6 +39,10 @@
 $ yarn install
 ```
 
+## Setup environment variables
+
+Copy `.env.example` to `.env` and fill in the missing values.
+
 ## Running the app
 
 ```bash
