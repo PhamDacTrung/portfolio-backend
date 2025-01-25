@@ -1,0 +1,7 @@
+export enum AchievementType {
+  CERTIFICATION = 'CERTIFICATION',
+  SCHOLARSHIP = 'SCHOLARSHIP',
+  AWARD = 'AWARD',
+  BADGE = 'BADGE',
+  OTHER = 'OTHER',
+}
